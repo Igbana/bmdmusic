@@ -14,7 +14,7 @@ class Homepage extends StatelessWidget {
               borderRadius: .circular(12)),
               child: Row(
                 children: [
-                  Image.asset('Reggae.png', cacheWidth: 100,)
+                  Image.asset('aseets/Reggae.png', cacheWidth: 100,)
                   ],
                   ),
                   )
