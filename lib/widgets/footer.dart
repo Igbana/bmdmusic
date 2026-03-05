@@ -175,7 +175,7 @@ class _SocialColumn extends StatelessWidget {
         SizedBox(height: 16),
         Row(
           children: [
-            _SocialIcon(icon: Icons.play_circle_outline, url: 'https://youtube.com/@bmdmusichome?si=dITQix3db2sKd9EP'),
+            _SocialIcon(icon: Icons.play_arrow, url: 'https://youtube.com/@bmdmusichome?si=dITQix3db2sKd9EP'),
             SizedBox(width: 16),
             _SocialIcon(icon: Icons.camera_alt_outlined, url: 'https://www.instagram.com/bishopmarcusdaniel?igsh=MWRsNmFkcXd0Ym5ubA%3D%3D&utm_source=qr'),
             SizedBox(width: 16),

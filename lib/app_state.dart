@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:youtube_explode_dart/youtube_explode_dart.dart';
 import '../models/stem_file.dart';
 
 class AppState extends ChangeNotifier {

@@ -35,7 +35,7 @@ class AppHeader extends StatelessWidget implements PreferredSizeWidget {
                 child: Row(
                   children: [
                     // const Icon(Icons.music_note, size: 24, color: Colors.black),
-                    Image.asset('black_logo.png', width: 100, height: 100,),
+                    Image.asset('black_logo.png', width: 64, height: 64,),
                     const SizedBox(width: 8),
                     Text(
                       'BMD Music Home',

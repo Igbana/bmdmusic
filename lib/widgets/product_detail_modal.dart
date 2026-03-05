@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -80,14 +81,18 @@ class _ProductDetailDialog extends StatelessWidget {
                           child: SizedBox(
                             width: double.infinity,
                             height: 280,
-                            child: Image.network(
-                              product.imageUrl,
-                              fit: BoxFit.cover,
-                              errorBuilder: (_, __, ___) => Container(
-                                color: const Color(0xFF374151),
-                                child: const Icon(Icons.music_note, color: Colors.white54, size: 48),
-                              ),
-                            ),
+                            child: Consumer<AppState>(
+                        builder: (context, appState, _) {
+                          return CachedNetworkImage(
+                            imageUrl: product.imageUrl,
+                            fit: BoxFit.cover,
+                            errorWidget: (_, __, ___) => Container(
+                          color: const Color(0xFF374151),
+                          child: const Icon(Icons.music_note, color: Colors.white54, size: 48),
+                        ),
+                          );
+                        },
+                      ),
                           ),
                         ),
                         const SizedBox(height: 16),
@@ -176,7 +181,7 @@ class _ProductDetailDialog extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(6)),
                             ),
                             child: Text(
-                              'Add to Cart - \$${product.price.toStringAsFixed(2)}',
+                              'Add to Cart - ₦${product.price}',
                               style: const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.w600),
                             ),
