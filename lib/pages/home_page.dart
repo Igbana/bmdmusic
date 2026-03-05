@@ -189,8 +189,8 @@ class _WhyBuySection extends StatelessWidget {
         //   fit: BoxFit.cover,
         //   errorBuilder: (_, __, ___) => Container(color: const Color(0xFF374151)),
         // ),
-        child: Image.asset(
-          'dp.jpeg',
+        child: Image.network(
+          'https://drive.google.com/file/d/1O_lzih6q2hct-AEVCkDus1S-53PT97fI/view?usp=drive_link',
           fit: BoxFit.cover,
           errorBuilder: (_, __, ___) => Container(color: const Color(0xFF374151)),
         ),
