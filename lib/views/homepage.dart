@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       body: Center(child: Column(
         children: [
-          Text("BMD Music Home", style: Theme.of(context).textTheme.bodyLarge,),
+          Text("BMD Musicss Home", style: Theme.of(context).textTheme.bodyLarge,),
           Container(
             decoration: BoxDecoration(
               borderRadius: .circular(12)),
